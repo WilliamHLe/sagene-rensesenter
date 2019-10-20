@@ -104,11 +104,15 @@ div.jumbotron.carousel-hero {
 }
 
 div.jumbotron.hero-nature {
-  background-image: url('bilder/fors.jpg');
+  background-image: url('bilder/genser.jpg');
+  filter: grayscale(80%);
+
 }
 
 div.jumbotron.hero-photography {
-  background-image: url('bilder/rens.jpg');
+  background-image: url('bilder/fors.jpg');
+  filter: grayscale(30%);
+  filter: brightness(50%);
 }
 
 div.jumbotron.hero-technology {
@@ -122,8 +126,8 @@ h1.hero-title, h2.hero-title, h3.hero-title {
 
 p.hero-subtitle {
   max-width: 600px;
-  margin: 25px auto;
-  padding: 10px 15px;
+  margin: 0px auto;
+  padding: 0px 15px;
   color: #fff;
 }
 
@@ -185,8 +189,7 @@ span {
 
 
 body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  background: url('bilder/bg.jpeg') center;
+  background-color: black;
 }
 
 
