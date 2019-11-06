@@ -101,11 +101,12 @@ div.jumbotron.carousel-hero {
 
 div.jumbotron.hero-nature {
   background-image: url('bilder/genser.jpg');
-  filter: grayscale(80%);
 }
 
 div.jumbotron.hero-photography {
   background-image: url('bilder/sr1.jpg');
+  filter: grayscale(30%);
+  filter: brightness(50%);
 }
 
 div.jumbotron.hero-technology {
@@ -127,7 +128,8 @@ p.hero-subtitle {
   border-radius: 0px;
 }
 
-.btn-primary.focus, .btn-primary:focus {
+/* Forandrer på fargen til knapp */
+/* .btn-primary.focus, .btn-primary:focus {
   box-shadow: 0 0 0 0 #048f83!important;
 }
 
@@ -138,13 +140,13 @@ p.hero-subtitle {
 }
 
 .btn.btn-primary {
-  background-color: #048f83!important;
-  border-color: #048f83!important;
+  background-color: #005eff!important;
+  border-color: #005eff!important;
 }
 
 .btn-primary.focus, .btn-primary:focus {
   box-shadow: 0 0 0 .2rem rgba(0,123,255,.5);
-}
+} */
 
 * {
   /*box-sizing: inherit;*/
@@ -201,11 +203,34 @@ body {
   }
 }
 
-
+.btn-breadcrumb .btn.btn-primary:not(:last-child):after {
+    border-left: 10px solid #327CBA;
+}
+.btn-breadcrumb .btn.btn-primary:hover:not(:last-child):after {
+    border-left: 10px solid #286090;
+}
+.breadcrumb-item a span.sep {
+    color: #ff0000;
+}
 .breadcrumb-item + .breadcrumb-item::before {
     font-family: 'fontAwesome';
-    content: ">" !important;
+    content: "" !important;
+    color: white;
 }
+.breadcrumb >.active a {
+   color: white;
+}
+.breadcrumb >.active {
+   color: white;
+}
+.breadcrumb >.active a{
+   color: white;
+   text-decoration: none;
+}
+.breadcrumb li a    {
+    color: white;
+}
+ol > li > a {color:white}
 .l-col a {
   color: white;
 }

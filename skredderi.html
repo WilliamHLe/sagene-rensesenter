@@ -28,27 +28,20 @@
 
 
   </head>
-  <body>
-
+  <body style="background-color: rgba(0, 106, 247, 0.69); font-family: 'Roboto', sans-serif;">
     <header>
       <div class="container-fluid d-none d-md-block">
         <div class="row justify-content-around tbar py-sm-2">
           <div class="col-4 col-sm-4 text-center">
             <li class="list-inline-item"><i class="far fa-clock mr-1"></i>09-17 (10-14)</li>
-            <li class="list-inline-item"><i class="fas fa-phone mr-1"></i><a href="tel:96692273">96 69 22 73</a></li>
           </div>
           <div class="col-4 col-sm-4 text-center cfav">
-            <a href="https://www.facebook.com/sagenerensesenter/" class="pr-2" target="_blank">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://plus.google.com/108853388835395534609" target="_blank">
-              <i class="fab fa-google-plus-g"></i>
-            </a>
+            <li class="list-inline-item"><i class="fas fa-phone mr-1"></i><a href="tel:96692273">96 69 22 73</a></li>
           </div>
         </div>
       </div>
 
-      <div class="container d-none d-md-block">
+      <div class="container-fluid d-none d-md-block">
         <div class="row">
           <div class="col text-center p-4">
             <a href="/"><img src="bilder/logo.png" class="logo" alt="logo"></a>
@@ -56,45 +49,34 @@
         </div>
       </div>
 
-      <nav class="navbar navbar-expand-md navbar-light bg-light py-0">
-        <a class="navbar-brand d-block d-md-none" href="/"><img src="bilder/logo.png" class="nav-logo" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="container">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item px-lg-4">
-                <a class="nav-link text-uppercase text-expanded" href="/">Hjem <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item px-lg-4 dropdown active">
-                  <a class="nav-link text-uppercase text-expanded dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="tjenester.html">Service</a>
-                  <div class="dropdown-menu mt-1" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="/vaskeri">Vaskeri</a>
-                    <a class="dropdown-item" href="/renseri">Renseri</a>
-                    <a class="dropdown-item" href="/skredderi">Skredderi</a>
-                  </div>
-              </li>
-              <li class="nav-item px-lg-4">
-                <a class="nav-link text-uppercase text-expanded" href="/omoss">Om oss</a>
-              </li>
-              <li class="nav-item px-lg-4">
-                <a class="nav-link text-uppercase text-expanded" href="/kontakt">Kontakt oss</a>
-              </li>
-            </ul>
+      <nav class="navbar navbar-light navbar-expand-lg bg-light py-0" id="mainNav">
+          <div class="container"><a class="navbar-brand text-uppercase d-lg-none text-expanded" href="#"><img src="bilder/logo.png" class="nav-logo" alt="Sagene Rensesenter logo"></a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div
+                  class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="nav navbar-nav mx-auto">
+                      <li role="presentation" class="nav-item"><a class="nav-link text-uppercase text-expanded" href="/">Hjem <span class="sr-only">(current)</span></a></li>
+                      <li role="presentation" class="nav-item dropdown"><a class="nav-link text-uppercase text-expanded dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">Service</a>
+                      <div class="dropdown-menu mt-1" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/vaskeri">Vaskeri</a>
+                        <a class="dropdown-item" href="/renseri">Renseri</a>
+                        <a class="dropdown-item" href="/skredderi">Skredderi</a>
+                      </div></li>
+                      <li role="presentation" class="nav-item"><a class="nav-link text-uppercase text-expanded" href="/omoss">Om oss</a></li>
+                      <li role="presentation" class="nav-item"><a class="nav-link text-uppercase text-expanded" href="/kontakt">Kontakt oss</a></li>
+                  </ul>
           </div>
-        </div>
+          </div>
       </nav>
+
     </header>
-
-
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb rounded-0 m-0" style="background-color: #7e8992; width: 100%;">
-        <li class="breadcrumb-item"><a style="color: black;" href="/">Hjem</a></li>
-        <li class="breadcrumb-item active" style="color: black;" aria-current="page">Skredderi</li>
+    <nav aria-label="breadcrumb" id="app-navbar">
+      <ol class="breadcrumb rounded-0 m-0 p-4" style=" background: linear-gradient(120deg, rgb(28,35,48), rgba(0,106,247,0.69)); width: 100%; ">
+        <li class="breadcrumb-item"><a style="color: white;" href="/">Hjem</a></li>
+        <li class="breadcrumb-item active" style="color: white;">></li>
+        <li class="breadcrumb-item active" style="color: white;" aria-current="page">Skredderi</li>
       </ol>
     </nav>
+
 
     <div class="container-fluid p-5" style="background-color: white; height: 1300px;">
 
@@ -119,7 +101,7 @@
       <div class="overskrift pt-5">
         <h2>Våre skredderitjenester</h2>
       </div>
-      <div class="row pt-5">
+      <div class="row pt-5 ">
         <div class="col-6">
           <table class="table table-hover">
             <thead class="thead-light">
@@ -178,113 +160,94 @@
 
     <footer class="page-footer font-small unique-color-dark" style="background-color: #1c2330;" >
 
-        <div style="background-color: #6351ce; color: white;">
-          <div class="container">
+      <!-- <div style="background-color: #6351ce; color: white;">
+        <div class="container">
 
-            <div class="row py-4 d-flex align-items-center">
+          <div class="row py-4 d-flex align-items-center">
 
-              <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                <h6 class="mb-0">Finn oss på sosiale medier</h6>
-              </div>
-
-              <div class="col-md-6 col-lg-7 text-center text-md-right">
-                <a class="fb-ic">
-                  <i class="fab fa-facebook-f white-text mr-4"> </i>
-                </a>
-
-                <a class="gplus-ic">
-                  <i class="fab fa-google-plus-g white-text mr-4"> </i>
-                </a>
-
-                <a class="li-ic">
-                  <i class="fab fa-linkedin-in white-text mr-4"> </i>
-                </a>
-
-                <a class="ins-ic">
-                  <i class="fab fa-instagram white-text"> </i>
-                </a>
-              </div>
-
+            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+              <h6 class="mb-0">Finn oss på sosiale medier</h6>
             </div>
 
-          </div>
-        </div>
+            <div class="col-md-6 col-lg-7 text-center text-md-right">
+              <a class="fb-ic">
+                <i class="fab fa-facebook-f white-text mr-4"> </i>
+              </a>
 
-        <div class="container text-center text-md-left mt-5">
-          <div class="row mt-3 l-col" style="color:white;">
-
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <h6 class="text-uppercase font-weight-bold">Sagene Rensesenter</h6>
-              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-              <p>
-                Sagene Rensesenter spesialiserer seg i vask, rens og skredder helt siden 2013.
-                Vi jobber hardt for å gjøre hverdagen din enklere enten du er bedrift eller privatperson.
-              </p>
-            </div>
-
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 class="text-uppercase font-weight-bold">Tjenester</h6>
-              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-              <p>
-                <a href="/vaskeri">Vaskeri</a>
-              </p>
-              <p>
-                <a href="/renseri">Renseri</a>
-              </p>
-              <p>
-                <a href="/skredderi">Skredderi</a>
-              </p>
-              <p>
-                <a href="/renseri">Tepperens</a>
-              </p>
-            </div>
-
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 class="text-uppercase font-weight-bold">Snarvei</h6>
-              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-              <p>
-                <a href="/omoss">Om oss</a>
-              </p>
-              <p>
-                <a href="/kontakt">FAQ</a>
-              </p>
-              <p>
-                <a href="/kontakt">Kontakt oss</a>
-              </p>
-              <p>
-                <a href="/kontakt">Hjelp</a>
-              </p>
-            </div>
-
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <h6 class="text-uppercase font-weight-bold">Kontakt</h6>
-              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-              <p>
-                <i class="fas fa-map-marker-alt mr-3"></i>Maridalsveien 174, 0469 Oslo</p>
-              <p>
-                <i class="fas fa-envelope mr-3"></i><a href="mailto:post@sagenerensesenter.no">post@sagenerensesenter.no</a></p>
-              <p>
-                <i class="fas fa-phone mr-3"></i><a href="tel:96692273">96 69 22 73</a></p>
             </div>
 
           </div>
 
         </div>
+      </div> -->
+      <div class="container text-center text-md-left pt-5">
+        <div class="row mt-3 l-col" style="color:white;">
 
-        <div class="footer-copyright text-center py-3" style="background-color: #161c26; color:#a2a4a8;">© 2019 Sagene Rensesenter ||
-          <a href="mailto:le.william.h@outlook.com"> Utviklet av William H. Le</a>
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">Sagene Rensesenter</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+
+              <div class="fb-page" data-href="https://www.facebook.com/sagenerensesenter/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/sagenerensesenter/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/sagenerensesenter/">Sagene Rensesenter</a></blockquote></div>
+
+
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">Tjenester</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <a href="/vaskeri">Vaskeri</a>
+            </p>
+            <p>
+              <a href="/renseri">Renseri</a>
+            </p>
+            <p>
+              <a href="/skredderi">Skredderi</a>
+            </p>
+            <p>
+              <a href="/renseri">Tepperens</a>
+            </p>
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">Snarvei</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <a href="/omoss">Om oss</a>
+            </p>
+            <p>
+              <a href="/kontakt">FAQ</a>
+            </p>
+            <p>
+              <a href="/kontakt">Kontakt oss</a>
+            </p>
+            <p>
+              <a href="/kontakt">Hjelp</a>
+            </p>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase font-weight-bold">Kontakt</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <i class="fas fa-map-marker-alt mr-3"></i>Maridalsveien 174, 0469 Oslo</p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i><a href="mailto:post@sagenerensesenter.no">post@sagenerensesenter.no</a></p>
+            <p>
+              <i class="fas fa-phone mr-3"></i><a href="tel:96692273">96 69 22 73</a></p>
+          </div>
         </div>
 
-      </footer>
+      </div>
 
+      <div class="footer-copyright text-center py-3" style="background-color: #161c26; color:#a2a4a8;">© 2019 Sagene Rensesenter ||
+        <a href="mailto:le.william.h@outlook.com"> Utviklet av William H. Le</a>
+      </div>
 
+    </footer>
 
-
-
-
-
-
-
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
