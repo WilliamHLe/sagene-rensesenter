@@ -4,20 +4,20 @@ require('recaptcha-master/src/autoload.php');
 
 // configure
 // an email address that will be in the From field of the email.
-$from = 'Sagene Rensesenter Kontaktform <demo@domain.com>';
+$from = $_POST['email'];
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'Kontaktform <post@sagenerensesenter.no>';
+$sendTo = 'Sagene Rensesenter <post@sagenerensesenter.no>';
 
 // subject of the email
-$subject = 'Ny melding fra kontaktform';
+$subject = 'Ny melding';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
-$fields = array('name' => 'Navn', 'email' => 'Epost', 'message' => 'Melding');
+$fields = array('name' => 'Navn', 'email' => 'E-post', 'message' => 'Melding');
 
 // message that will be displayed when everything is OK :)
-$okMessage = 'Meldingen ble sendt. Takk for at du tar kontakt, du vil høre fra oss snart!';
+$okMessage = 'Takk for at du tar kontakt med oss, du vil høre fra oss igjen snart!';
 
 // If something goes wrong, we will display this message.
 $errorMessage = 'Meldingen ble ikke sendt. Prøv på nytt!';
