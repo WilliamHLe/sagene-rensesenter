@@ -7,6 +7,7 @@
     <meta name="keywords" content="Vaskeri, Renseri, Skredderi, Vask, Rens, Skredder, Systue">
 
     <link rel="stylesheet" type="text/css" href="sr.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="180x180" href="bilder/apple-touch-icon.png">
@@ -27,7 +28,7 @@
     </script>
 
   </head>
-  <body>
+  <body style="background-color: rgba(0, 106, 247, 0.69); font-family: 'Roboto', sans-serif;">
     <header>
       <div class="container-fluid d-none d-md-block">
         <div class="row justify-content-around tbar py-sm-2">
@@ -48,7 +49,7 @@
         </div>
       </div>
 
-      <nav class="navbar navbar-light navbar-expand-lg bg-light py-lg-4" id="mainNav">
+      <nav class="navbar navbar-light navbar-expand-lg bg-light py-0" id="mainNav">
           <div class="container"><a class="navbar-brand text-uppercase d-lg-none text-expanded" href="#"><img src="bilder/logo.png" class="nav-logo" alt="Sagene Rensesenter logo"></a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
               <div
                   class="collapse navbar-collapse" id="navbarResponsive">
@@ -67,62 +68,38 @@
           </div>
       </nav>
 
-      <!-- <nav class="navbar navbar-expand-md navbar-light bg-light py-0">
-        <a class="navbar-brand d-block d-md-none" href="/"><img src="bilder/logo.png" class="nav-logo" alt="Sagene Rensesenter logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="container">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item px-lg-4 active">
-                <a class="nav-link text-uppercase text-expanded" href="/">Hjem <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item px-lg-4 dropdown ">
-                <a class="nav-link text-uppercase text-expanded dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">Service</a>
-                <div class="dropdown-menu mt-1" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="/vaskeri">Vaskeri</a>
-                  <a class="dropdown-item" href="/renseri">Renseri</a>
-                  <a class="dropdown-item" href="/skredderi">Skredderi</a>
-                </div>
-              </li>
-              <li class="nav-item px-lg-4">
-                <a class="nav-link text-uppercase text-expanded" href="/omoss">Om oss</a>
-              </li>
-              <li class="nav-item px-lg-4">
-                <a class="nav-link text-uppercase text-expanded" href="/kontakt">Kontakt oss</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav> -->
     </header>
 
 
     <main>
       <section id="carousel">
-        <div class="carousel slide" data-ride="carousel" data-interval="7000" id="carousel-1">
+        <div class="carousel slide" data-ride="carousel" data-interval="5000" id="carousel-1">
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
                     <div class="jumbotron hero-nature carousel-hero">
-                        <h1 class="hero-title">Hero Nature</h1>
-                        <p class="hero-subtitle">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-                        <p><a class="btn btn-primary hero-button plat" role="button" href="#">Learn more</a></p>
+                        <!-- <div class="card mb-3 " style="max-width: 25rem; background-color: #479cff; position: absolute; right: 0;  bottom: 20.5%;    width: 60%;">
+                          <div class="card-header">Header</div>
+                          <div class="card-body">
+                            <h5 class="card-title">Dark card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                        </div> -->
+                        <div class="hero-text" style="position: absolute; right: 0;  bottom: 20.5%; width: 45%;">
+                          <h1 class="hero-title" >Vaskeri, renseri og skreddersøm</h1>
+                          <p class="hero-subtitle">La oss gjøre jobben så du kan bruke tiden på noe annet!</p>
+                        </div>
+
+
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="jumbotron hero-photography carousel-hero">
-                        <h1 class="hero-title">Hero Photography</h1>
-                        <p class="hero-subtitle">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-                        <p><a class="btn btn-primary hero-button plat" role="button" href="#">Learn more</a></p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="jumbotron hero-technology carousel-hero">
-                        <h1 class="hero-title">Hero Technology</h1>
-                        <p class="hero-subtitle">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-                        <p><a class="btn btn-primary hero-button plat" role="button" href="#">Learn more</a></p>
+                        <h2 class="hero-title">Vi tar på oss små og store oppdrag</h2>
+                        <p><a class="btn btn-primary " style="color:white;" role="button" href="#">Les mer</a></p>
                     </div>
                 </div>
             </div>
@@ -137,7 +114,7 @@
       </section>
 
       <section>
-        <div class="bg pt-5 pb-5" style="background: url('bilder/bg.jpeg') center;">
+        <div class="bg pt-5 pb-5" >
           <div class="container" >
             <div class="row p-4 justify-content-sm-center justify-content-center" >
               <div class="col-md-4 d-flex align-items-stretch pb-sm-4 pb-4 w-75">
@@ -189,7 +166,7 @@
                     <img class="card-img-top" src="bilder/suit.svg" style="width: 50%; height: auto;" alt="Dress">
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">350,-</h5>
+                    <h5 class="card-title">390,-</h5>
                     <p class="card-text">Dressrens</p>
                   </div>
                 </div>
@@ -257,7 +234,6 @@
 
         </div>
       </div> -->
-
       <div class="container text-center text-md-left pt-5">
         <div class="row mt-3 l-col" style="color:white;">
 

@@ -1,3 +1,4 @@
+/* top navbar */
 .tbar {
   background-color: #1c2330;
   color: #7e8992;
@@ -26,7 +27,8 @@ i:hover + a{
   text-decoration: none;
 }
 
-/* underline navbar */
+
+/* mobile navbar */
 .navbar {
  min-height: 80px;
 }
@@ -35,6 +37,7 @@ i:hover + a{
  height: 80px;
  line-height: 80px;
 }
+
 
 
 @media (min-width:992px) {
@@ -48,32 +51,26 @@ i:hover + a{
   text-transform: uppercase;
 }
 
-
+/* navbar blue underline */
 .navbar-nav > li {
   float: left;
   position: relative;
   border-bottom: 5px solid #f8f9fa;
 }
-
-
-/*
-.navbar-light .navbar-nav .active a::after {
-  border-bottom: 5px solid #5bc0eb;
-  bottom: -10px;
-  content: " ";
-  left: 0;
-  position: absolute;
-  right: 0;
-}*/
 .navbar-nav > li:hover  {
   position: relative;
   border-bottom: 5px solid #3f92d1;
   text-decoration: none;
   transition: .3s ease-in-out;
 }
+.nav-link {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  padding: 0;
+}
 
 
-
+/* navbar main brand */
 .logo {
   height: auto;
   width: 500px;
@@ -84,8 +81,6 @@ i:hover + a{
     width: 400px;
   }
 }
-
-
 .nav-logo {
   margin-top: 20px;
   height: auto;
@@ -93,6 +88,7 @@ i:hover + a{
 }
 
 
+/* carousel */
 div.jumbotron.carousel-hero {
   color: #fff;
   text-align: center;
@@ -104,11 +100,13 @@ div.jumbotron.carousel-hero {
 }
 
 div.jumbotron.hero-nature {
-  background-image: url('bilder/fors.jpg');
+  background-image: url('bilder/genser.jpg');
 }
 
 div.jumbotron.hero-photography {
-  background-image: url('bilder/rens.jpg');
+  background-image: url('bilder/sr1.jpg');
+  filter: grayscale(30%);
+  filter: brightness(50%);
 }
 
 div.jumbotron.hero-technology {
@@ -117,13 +115,12 @@ div.jumbotron.hero-technology {
 
 h1.hero-title, h2.hero-title, h3.hero-title {
   text-shadow: 0 3px 3px rgba(0,0,0,0.4);
-  color: #fff;
 }
 
 p.hero-subtitle {
   max-width: 600px;
-  margin: 25px auto;
-  padding: 10px 15px;
+  margin: 0px auto;
+  padding: 0px 15px;
   color: #fff;
 }
 
@@ -131,7 +128,8 @@ p.hero-subtitle {
   border-radius: 0px;
 }
 
-.btn-primary.focus, .btn-primary:focus {
+/* Forandrer på fargen til knapp */
+/* .btn-primary.focus, .btn-primary:focus {
   box-shadow: 0 0 0 0 #048f83!important;
 }
 
@@ -142,13 +140,13 @@ p.hero-subtitle {
 }
 
 .btn.btn-primary {
-  background-color: #048f83!important;
-  border-color: #048f83!important;
+  background-color: #005eff!important;
+  border-color: #005eff!important;
 }
 
 .btn-primary.focus, .btn-primary:focus {
   box-shadow: 0 0 0 .2rem rgba(0,123,255,.5);
-}
+} */
 
 * {
   /*box-sizing: inherit;*/
@@ -185,8 +183,7 @@ span {
 
 
 body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  background: url('bilder/bg.jpeg') center;
+  background-color: black;
 }
 
 
@@ -206,11 +203,34 @@ body {
   }
 }
 
-
+.btn-breadcrumb .btn.btn-primary:not(:last-child):after {
+    border-left: 10px solid #327CBA;
+}
+.btn-breadcrumb .btn.btn-primary:hover:not(:last-child):after {
+    border-left: 10px solid #286090;
+}
+.breadcrumb-item a span.sep {
+    color: #ff0000;
+}
 .breadcrumb-item + .breadcrumb-item::before {
     font-family: 'fontAwesome';
-    content: ">" !important;
+    content: "" !important;
+    color: white;
 }
+.breadcrumb >.active a {
+   color: white;
+}
+.breadcrumb >.active {
+   color: white;
+}
+.breadcrumb >.active a{
+   color: white;
+   text-decoration: none;
+}
+.breadcrumb li a    {
+    color: white;
+}
+ol > li > a {color:white}
 .l-col a {
   color: white;
 }
