@@ -52,6 +52,6 @@
   },
   "lint-staged": {
     "./src": "eslint --cache --fix",
-    "*./src": "prettier --write"
+    "*./src*": "prettier --write"
   }
 }
