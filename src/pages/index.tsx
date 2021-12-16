@@ -8,13 +8,13 @@ const IndexPage = function () {
   return (
     <main>
       <title>Home Page</title>
-        <Layout>
-            <header>
-                <Topbar />
-                <LogoSection />
-                <Navbar />
-            </header>
-        </Layout>
+      <Layout>
+        <header>
+          <Topbar />
+          <LogoSection />
+          <Navbar />
+        </header>
+      </Layout>
     </main>
   );
 };

@@ -3,15 +3,15 @@ import styled from "styled-components";
 import { Link } from "gatsby";
 
 const Navbar = () => {
-    return(
-        <Nav>
-            <NavLink to="/">Hjem</NavLink>
-            <NavLink to="/">Service</NavLink>
-            <NavLink to="/">Om oss</NavLink>
-            <NavLink to="/">Kontakt</NavLink>
-        </Nav>
-    )
-}
+  return (
+    <Nav>
+      <NavLink to="/">Hjem</NavLink>
+      <NavLink to="/">Service</NavLink>
+      <NavLink to="/">Om oss</NavLink>
+      <NavLink to="/">Kontakt</NavLink>
+    </Nav>
+  );
+};
 
 export default Navbar;
 
@@ -23,8 +23,7 @@ const Nav = styled.nav`
   position: relative;
   justify-content: center;
   padding: 0.5rem calc((100vw - 1300px) / 2);
-
-`
+`;
 
 const NavLink = styled(Link)`
   display: flex;
@@ -33,4 +32,4 @@ const NavLink = styled(Link)`
   height: 100%;
   text-decoration: none;
   padding: 0 2rem;
-`
+`;
