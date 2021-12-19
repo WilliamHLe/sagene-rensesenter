@@ -1,14 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
+import { menuData } from "../data/MenuData";
 
 const Navbar = () => {
   return (
     <Nav>
-      <NavLink to="/">Hjem</NavLink>
-      <NavLink to="/">Service</NavLink>
-      <NavLink to="/">Om oss</NavLink>
-      <NavLink to="/">Kontakt</NavLink>
+        {menuData.map((item, index) => (
+          <NavLink to={item.link} key={index}>
+            {item.title}
+          </NavLink>
+        ))}
     </Nav>
   );
 };
@@ -32,4 +34,6 @@ const NavLink = styled(Link)`
   height: 100%;
   text-decoration: none;
   padding: 0 2rem;
+  cursor: pointer;
 `;
+
