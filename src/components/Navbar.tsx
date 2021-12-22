@@ -19,7 +19,7 @@ export default Navbar;
 
 const Nav = styled.nav`
   height: 80px;
-  background: lightgrey;
+  background: #ffffff;
   display: flex;
   z-index: 100;
   position: relative;

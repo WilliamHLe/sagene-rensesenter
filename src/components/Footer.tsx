@@ -116,7 +116,7 @@ const FooterLinkTitle = styled.h2`
 `;
 
 const Copyright = styled.div`
-  max-width: 1000px;
+  max-width: 100%;
   width: 100%;
   background: #161c26;
   display: flex;

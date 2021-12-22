@@ -3,6 +3,8 @@ import Layout from "../components/Layout";
 import Topbar from "../components/Topbar";
 import LogoSection from "../components/LogoSection";
 import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import Maps from "../components/Maps";
 
 const IndexPage = function () {
   return (
@@ -14,6 +16,8 @@ const IndexPage = function () {
           <LogoSection />
           <Navbar />
         </header>
+        <Hero />
+        <Maps />
       </Layout>
     </main>
   );
