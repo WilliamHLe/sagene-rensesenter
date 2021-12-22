@@ -6,11 +6,11 @@ import { menuData } from "../data/MenuData";
 const Navbar = () => {
   return (
     <Nav>
-        {menuData.map((item, index) => (
-          <NavLink to={item.link} key={index}>
-            {item.title}
-          </NavLink>
-        ))}
+      {menuData.map((item, index) => (
+        <NavLink to={item.link} key={index}>
+          {item.title}
+        </NavLink>
+      ))}
     </Nav>
   );
 };
@@ -36,4 +36,3 @@ const NavLink = styled(Link)`
   padding: 0 2rem;
   cursor: pointer;
 `;
-

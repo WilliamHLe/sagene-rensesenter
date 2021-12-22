@@ -19,7 +19,7 @@ const Logo = styled.img`
 
 const Background = styled.div`
   display: flex;
-  background-color: #3f92d1;
+  background-color: #4f98f9;
   height: 100px;
   align-items: center;
 `;
