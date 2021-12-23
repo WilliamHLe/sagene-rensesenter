@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../images/logo.png";
+import logo from "../../images/logo.png";
 
 const LogoSection = () => {
   return (
@@ -22,4 +22,8 @@ const Background = styled.div`
   background-color: #4f98f9;
   height: 100px;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;

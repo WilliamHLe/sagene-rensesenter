@@ -73,7 +73,7 @@ const FooterDescription = styled.div`
 
   h1 {
     margin-bottom: 2rem;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   p {
