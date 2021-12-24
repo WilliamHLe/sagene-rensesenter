@@ -24,14 +24,14 @@ const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 70vh;
   padding: 0 1rem;
   position: relative;
 `;
 
 const HeroImg = styled.img`
   width: 100%;
-  height: 70%;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 `;
@@ -56,12 +56,15 @@ const HeroItems = styled.div`
   color: #ffffff;
   height: 50vh;
   max-height: 100%;
-  padding: 0;
+  padding: 0 40px 0 0;
   justify-content: center;
   align-items: center;
   text-align: center;
   line-height: 1.1;
   font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 `;
 const HeroH1 = styled.h1``;
 const HeroP = styled.div``;

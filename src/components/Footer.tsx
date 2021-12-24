@@ -1,20 +1,34 @@
 import React from "react";
 import styled from "styled-components";
-
+import {
+  FaRegCopyright,
+  MdLocationOn,
+  MdMail,
+  BsTelephoneFill,
+} from "react-icons/all";
 const Footer = () => {
   return (
     <div>
       <FooterContainer>
         <FooterLinksWrapper>
           <FooterDescription>
-            <h1>Sagene Rensesenter</h1>
+            <h1>SAGENE RENSESENTER</h1>
             <DescItems>
-              <p>Maridalsveien 174A</p>
+              <p>
+                <MdLocationOn />
+                Maridalsveien 174A
+              </p>
               <p>0469 Oslo</p>
             </DescItems>
             <DescItems>
-              <p>post@sagenerensesenter.no</p>
-              <p>96 69 22 73</p>
+              <p>
+                <MdMail />
+                post@sagenerensesenter.no
+              </p>
+              <p>
+                <BsTelephoneFill />
+                96 69 22 73
+              </p>
             </DescItems>
           </FooterDescription>
         </FooterLinksWrapper>
@@ -37,7 +51,10 @@ const Footer = () => {
       </FooterContainer>
       <Copyright>
         <CopyrightWrapper>
-          © 2022 Sagene Rensesenter || Utviklet av William H. Le
+          <Icon>
+            <FaRegCopyright />
+          </Icon>
+          2022 Sagene Rensesenter || Utviklet av William H. Le
         </CopyrightWrapper>
       </Copyright>
     </div>
@@ -45,6 +62,10 @@ const Footer = () => {
 };
 
 export default Footer;
+
+const Icon = styled.div`
+  margin: 0 3px;
+`;
 
 const FooterContainer = styled.div`
   padding: 3rem calc((100vw - 1100px) / 2);
@@ -127,5 +148,5 @@ const CopyrightWrapper = styled.div`
   display: flex;
   margin: auto;
   color: white;
-  font-size: 12px;
+  font-size: 13px;
 `;

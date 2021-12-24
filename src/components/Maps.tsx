@@ -15,6 +15,7 @@ const Maps = () => {
 export default Maps;
 
 const MapsContainer = styled.div`
+  background-color: black;
   width: 100%;
   height: 500px;
 `;
