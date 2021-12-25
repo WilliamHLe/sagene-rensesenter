@@ -8,7 +8,7 @@ import PriceSection from "../components/PriceSection";
 const IndexPage = function () {
   return (
     <main>
-      <title>Home Page</title>
+      <title>Sagene Rensesenter - Rens, vask og skredder på Sagene</title>
       <Layout>
         <Hero />
         <ServiceSection />

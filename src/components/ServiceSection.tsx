@@ -45,10 +45,13 @@ const ServiceSection = () => {
 export default ServiceSection;
 
 const ServiceContainer = styled.div`
-  min-height: 80vh;
   background-color: #4f98f9;
-  padding: 8rem calc((100vw - 1300px) / 2);
+  min-height: 80vh;
+  padding: 3rem calc((100vw - 1300px) / 2);
   align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 `;
 
 const ServiceWrapper = styled.div`

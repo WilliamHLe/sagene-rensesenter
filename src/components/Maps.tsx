@@ -17,7 +17,7 @@ export default Maps;
 const MapsContainer = styled.div`
   background-color: black;
   width: 100%;
-  height: 500px;
+  height: 60vh;
 `;
 const Iframe = styled.iframe`
   width: 100%;
