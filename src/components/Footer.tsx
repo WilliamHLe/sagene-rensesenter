@@ -10,26 +10,30 @@ const Footer = () => {
   return (
     <>
       <FooterContainer>
-          <FooterDescription>
-            <h1>SAGENE RENSESENTER</h1>
-            <DescItems>
-              <Icon>
-                <MdLocationOn />
-              </Icon>
-              <DescAddress>
-                <DescAddressItems>Maridalsveien 174A</DescAddressItems>
-                <DescAddressItems>0469 Oslo</DescAddressItems>
-              </DescAddress>
-            </DescItems>
-            <DescItems>
-                <Icon><MdMail /></Icon>
-                post@sagenerensesenter.no
-            </DescItems>
-            <DescItems>
-              <Icon><BsTelephoneFill /></Icon>
-              96 69 22 73
-            </DescItems>
-          </FooterDescription>
+        <FooterDescription>
+          <h1>SAGENE RENSESENTER</h1>
+          <DescItems>
+            <Icon>
+              <MdLocationOn />
+            </Icon>
+            <DescAddress>
+              <DescAddressItems>Maridalsveien 174A</DescAddressItems>
+              <DescAddressItems>0469 Oslo</DescAddressItems>
+            </DescAddress>
+          </DescItems>
+          <DescItems>
+            <Icon>
+              <MdMail />
+            </Icon>
+            post@sagenerensesenter.no
+          </DescItems>
+          <DescItems>
+            <Icon>
+              <BsTelephoneFill />
+            </Icon>
+            96 69 22 73
+          </DescItems>
+        </FooterDescription>
         <FooterLinksWrapper>
           <FooterLinkItems>
             <FooterLinkTitle>Tjenester</FooterLinkTitle>
@@ -100,10 +104,8 @@ const DescItems = styled.div`
 const DescAddress = styled.div`
   display: flex;
   flex-direction: column;
-`
-const DescAddressItems = styled.div`
-  
-`
+`;
+const DescAddressItems = styled.div``;
 
 const FooterDescription = styled.div`
   display: flex;
@@ -115,7 +117,6 @@ const FooterDescription = styled.div`
     font-size: 15px;
     line-height: 1.3;
   }
-
 
   @media screen and (min-width: 576px) {
     padding: 1rem 2rem;
@@ -168,4 +169,4 @@ const Author = styled.div`
   text-align: center;
   color: #ffffff;
   font-size: 12px;
-`
+`;
