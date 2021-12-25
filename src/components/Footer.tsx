@@ -8,30 +8,28 @@ import {
 } from "react-icons/all";
 const Footer = () => {
   return (
-    <div>
+    <>
       <FooterContainer>
-        <FooterLinksWrapper>
           <FooterDescription>
             <h1>SAGENE RENSESENTER</h1>
             <DescItems>
-              <p>
+              <Icon>
                 <MdLocationOn />
-                Maridalsveien 174A
-              </p>
-              <p>0469 Oslo</p>
+              </Icon>
+              <DescAddress>
+                <DescAddressItems>Maridalsveien 174A</DescAddressItems>
+                <DescAddressItems>0469 Oslo</DescAddressItems>
+              </DescAddress>
             </DescItems>
             <DescItems>
-              <p>
-                <MdMail />
+                <Icon><MdMail /></Icon>
                 post@sagenerensesenter.no
-              </p>
-              <p>
-                <BsTelephoneFill />
-                96 69 22 73
-              </p>
+            </DescItems>
+            <DescItems>
+              <Icon><BsTelephoneFill /></Icon>
+              96 69 22 73
             </DescItems>
           </FooterDescription>
-        </FooterLinksWrapper>
         <FooterLinksWrapper>
           <FooterLinkItems>
             <FooterLinkTitle>Tjenester</FooterLinkTitle>
@@ -49,63 +47,78 @@ const Footer = () => {
           </FooterLinkItems>
         </FooterLinksWrapper>
       </FooterContainer>
-      <Copyright>
-        <CopyrightWrapper>
+      <CopyrightContainer>
+        <CopyrightText>
           <Icon>
             <FaRegCopyright />
           </Icon>
-          2022 Sagene Rensesenter || Utviklet av William H. Le
-        </CopyrightWrapper>
-      </Copyright>
-    </div>
+          2022 Sagene Rensesenter
+        </CopyrightText>
+        <Author>Utviklet av William Le</Author>
+      </CopyrightContainer>
+    </>
   );
 };
 
 export default Footer;
 
 const Icon = styled.div`
+  display: flex;
   margin: 0 3px;
+  align-items: center;
 `;
 
 const FooterContainer = styled.div`
-  padding: 3rem calc((100vw - 1100px) / 2);
+  padding: 2rem calc((100vw - 1100px) / 2);
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 2fr 1fr;
   color: #ffffff;
   background: #1c2330;
+  width: 100%;
+
+  @media screen and (min-width: 576px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `;
 
 const FooterLinksWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
 
-  @media screen and (max-width: 820px) {
-    grid-template-columns: 1fr;
+  @media screen and (min-width: 576px) {
+    grid-template-columns: 1fr 1fr;
   }
 `;
+
 const DescItems = styled.div`
-  margin-bottom: 1rem;
+  display: flex;
+  width: 100%;
+  font-size: 13px;
+  margin-bottom: 10px;
 `;
+
+const DescAddress = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+const DescAddressItems = styled.div`
+  
+`
 
 const FooterDescription = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0 6rem;
+  padding: 1rem 1.5rem;
 
   h1 {
     margin-bottom: 2rem;
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 1.3;
   }
 
-  p {
-    margin-bottom: 0.5rem;
-    margin-right: 2rem;
-    width: 100%;
-    font-size: 16px;
-  }
 
-  @media screen and (max-width: 400px) {
-    padding: 1rem;
+  @media screen and (min-width: 576px) {
+    padding: 1rem 2rem;
   }
 `;
 
@@ -113,16 +126,16 @@ const FooterLinkItems = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
 
-  @media screen and (max-width: 400px) {
-    padding: 1rem;
+  @media screen and (min-width: 576px) {
+    padding: 1rem 2rem;
   }
 `;
 
 const FooterLink = styled.div`
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
   margin-bottom: 0.5rem;
   color: #ffffff;
 
@@ -132,21 +145,27 @@ const FooterLink = styled.div`
   }
 `;
 const FooterLinkTitle = styled.h2`
-  font-size: 15px;
+  font-size: 14px;
   margin-bottom: 16px;
 `;
 
-const Copyright = styled.div`
-  max-width: 100%;
+const CopyrightContainer = styled.div`
   width: 100%;
   background: #161c26;
   display: flex;
-  padding: 1rem 0;
+  flex-direction: column;
+  padding: 0.7rem 0;
 `;
 
-const CopyrightWrapper = styled.div`
+const CopyrightText = styled.div`
   display: flex;
-  margin: auto;
-  color: white;
-  font-size: 13px;
+  margin: auto auto 3px auto;
+  color: #ffffff;
+  font-size: 12px;
 `;
+
+const Author = styled.div`
+  text-align: center;
+  color: #ffffff;
+  font-size: 12px;
+`
