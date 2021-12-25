@@ -28,22 +28,21 @@ const HeroContainer = styled.div`
   padding: 0 1rem;
   position: relative;
 `;
-
-const HeroImg = styled.img`
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-`;
 const HeroBg = styled.div`
+  background-color: #161c26;
+  height: 70vh;
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
 `;
+const HeroImg = styled.img`
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+`;
+
 const HeroContent = styled.div`
   z-index: 3;
   height: calc(100vh - 80px);
@@ -56,15 +55,25 @@ const HeroItems = styled.div`
   color: #ffffff;
   height: 50vh;
   max-height: 100%;
-  padding: 0 40px 0 0;
   justify-content: center;
   align-items: center;
   text-align: center;
-  line-height: 1.1;
+  line-height: 1.3;
   font-weight: bold;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  
+
+  @media screen and (min-width: 576px) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 40px 0 0;
+  }
 `;
-const HeroH1 = styled.h1``;
-const HeroP = styled.div``;
+const HeroH1 = styled.h1`
+  font-size: 25px;
+  @media screen and (min-width: 576px) {
+  }
+`;
+const HeroP = styled.div`
+  font-size: 15px;
+`;

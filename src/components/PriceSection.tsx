@@ -114,6 +114,7 @@ const PriceHeader = styled.h1`
   font-size: 20px;
   font-weight: normal;
   margin-bottom: 10px;
+  padding: 5px 0;
 `;
 const PriceP = styled.div``;
 

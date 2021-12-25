@@ -96,6 +96,7 @@ const ServiceInfo = styled.div`
 
 const ServiceHeader = styled.h1`
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  padding: 5px 0;
 `;
 const ServiceP = styled.div``;
