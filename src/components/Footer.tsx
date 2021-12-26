@@ -6,7 +6,7 @@ import {
   MdMail,
   BsTelephoneFill,
 } from "react-icons/all";
-import {Link} from "gatsby";
+import { Link } from "gatsby";
 const Footer = () => {
   return (
     <>
