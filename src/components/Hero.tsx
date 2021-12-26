@@ -60,7 +60,6 @@ const HeroItems = styled.div`
   text-align: center;
   line-height: 1.3;
   font-weight: bold;
-  
 
   @media screen and (min-width: 576px) {
     position: absolute;
