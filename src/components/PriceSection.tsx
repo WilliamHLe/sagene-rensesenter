@@ -1,6 +1,6 @@
-import React, {CSSProperties} from "react";
+import React, { CSSProperties } from "react";
 import styled from "styled-components";
-import {StaticImage} from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 
 const PriceSection = () => {
   return (
@@ -8,21 +8,33 @@ const PriceSection = () => {
       <PriceTitle>Rimelige priser</PriceTitle>
       <PriceWrapper>
         <PriceCard>
-          <StaticImage src="../images/suit.svg" style={PriceImage} alt="sewing machine" />
+          <StaticImage
+            src="../images/suit.svg"
+            style={PriceImage}
+            alt="sewing machine"
+          />
           <PriceInfo>
             <PriceHeader>450,-</PriceHeader>
             <PriceP>Dressrens</PriceP>
           </PriceInfo>
         </PriceCard>
         <PriceCard>
-          <StaticImage src="../images/w-mach.svg" style={PriceImage} alt="suit" />
+          <StaticImage
+            src="../images/w-mach.svg"
+            style={PriceImage}
+            alt="suit"
+          />
           <PriceInfo>
             <PriceHeader>Fra 100,- per kg</PriceHeader>
             <PriceP>Vask av klær</PriceP>
           </PriceInfo>
         </PriceCard>
         <PriceCard>
-          <StaticImage src="../images/s-mach.svg" style={PriceImage} alt="carpet" />
+          <StaticImage
+            src="../images/s-mach.svg"
+            style={PriceImage}
+            alt="carpet"
+          />
           <PriceInfo>
             <PriceHeader>Fra 180,-</PriceHeader>
             <PriceP>Legge opp bukser</PriceP>

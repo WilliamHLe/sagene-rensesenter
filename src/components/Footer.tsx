@@ -48,7 +48,7 @@ const Footer = () => {
             <FooterLink to="/omoss">Om oss</FooterLink>
             <FooterLink>FAQ</FooterLink>
             <FooterLink>Kontakt oss</FooterLink>
-            <FooterLink>Tjenestevilkår</FooterLink>
+            <FooterLink to="/tjenestevilkaar">Tjenestevilkår</FooterLink>
           </FooterLinkItems>
         </FooterLinksWrapper>
       </FooterContainer>
