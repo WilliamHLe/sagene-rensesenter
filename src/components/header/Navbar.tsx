@@ -3,10 +3,13 @@ import styled from "styled-components";
 import { Link } from "gatsby";
 import { menuData } from "../../data/MenuData";
 import { FaBars } from "react-icons/fa";
-const Navbar = () => {
+import logo from "../../images/logo.png";
+
+const Navbar = ({ toggle }) => {
   return (
     <Nav>
-      <Bars />
+      <NavLogo to="/" src={logo} />
+      <Bars onClick={toggle} />
       <NavMenu>
         {menuData.map((item, index) => (
           <NavLink to={item.link} key={index}>
@@ -30,6 +33,20 @@ const Nav = styled.nav`
   padding: 0.5rem calc((100vw - 1300px) / 2);
 `;
 
+const NavLogo = styled.img`
+  display: flex;
+  justify-self: center;
+  cursor: pointer;
+  margin: auto;
+  height: 5vh;
+  align-items: center;
+  z-index: 999;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+`;
+
 const NavLink = styled(Link)`
   display: flex;
   color: #7e8992;
@@ -41,6 +58,10 @@ const NavLink = styled(Link)`
 
   &:hover {
     color: black;
+  }
+
+  &:active {
+    border-bottom: 3px solid #3f92d1;
   }
 `;
 
@@ -64,5 +85,7 @@ const Bars = styled(FaBars)`
     transform: translate(-100%, 75%);
     font-size: 1.8rem;
     cursor: pointer;
+    justify-self: center;
+    align-items: center;
   }
 `;
