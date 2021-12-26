@@ -38,7 +38,7 @@ const NavLogo = styled.img`
   justify-self: center;
   cursor: pointer;
   margin: auto;
-  height: 5vh;
+  height: 4vh;
   align-items: center;
   z-index: 999;
 
