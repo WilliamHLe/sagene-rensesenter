@@ -1,8 +1,6 @@
-import React from "react";
+import React, {CSSProperties} from "react";
 import styled from "styled-components";
-import sewMachine from "../images/s-mach.svg";
-import suit from "../images/suit.svg";
-import wMachine from "../images/w-mach.svg";
+import {StaticImage} from "gatsby-plugin-image";
 
 const PriceSection = () => {
   return (
@@ -10,21 +8,21 @@ const PriceSection = () => {
       <PriceTitle>Rimelige priser</PriceTitle>
       <PriceWrapper>
         <PriceCard>
-          <PriceImage src={suit} alt="sewing machine" />
+          <StaticImage src="../images/suit.svg" style={PriceImage} alt="sewing machine" />
           <PriceInfo>
             <PriceHeader>450,-</PriceHeader>
             <PriceP>Dressrens</PriceP>
           </PriceInfo>
         </PriceCard>
         <PriceCard>
-          <PriceImage src={wMachine} alt="suit" />
+          <StaticImage src="../images/w-mach.svg" style={PriceImage} alt="suit" />
           <PriceInfo>
             <PriceHeader>Fra 100,- per kg</PriceHeader>
             <PriceP>Vask av klær</PriceP>
           </PriceInfo>
         </PriceCard>
         <PriceCard>
-          <PriceImage src={sewMachine} alt="carpet" />
+          <StaticImage src="../images/s-mach.svg" style={PriceImage} alt="carpet" />
           <PriceInfo>
             <PriceHeader>Fra 180,-</PriceHeader>
             <PriceP>Legge opp bukser</PriceP>
@@ -90,10 +88,10 @@ const PriceCard = styled.div`
   }
 `;
 
-const PriceImage = styled.img`
-  width: 40%;
-  border-radius: 10px 10px 0 0;
-`;
+const PriceImage: CSSProperties = {
+  width: "40%",
+  borderRadius: "10px 10px 0 0",
+};
 
 const PriceInfo = styled.div`
   display: flex;

@@ -1,12 +1,12 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import styled from "styled-components";
-import bg from "../images/genser.jpg";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Hero = () => {
   return (
     <HeroContainer>
       <HeroBg>
-        <HeroImg src={bg} alt="sweater" />
+        <StaticImage src="../images/genser.jpg" alt="sweater" style={HeroImg} />
       </HeroBg>
       <HeroContent>
         <HeroItems>
@@ -37,11 +37,14 @@ const HeroBg = styled.div`
   right: 0;
   left: 0;
 `;
-const HeroImg = styled.img`
-  width: 100%;
-  height: 70vh;
-  object-fit: cover;
-`;
+
+const HeroImg: CSSProperties = {
+  width: "100%",
+  height: "auto",
+  objectFit: "cover",
+  minHeight: "70vh",
+  maxHeight: "100vh",
+};
 
 const HeroContent = styled.div`
   z-index: 3;

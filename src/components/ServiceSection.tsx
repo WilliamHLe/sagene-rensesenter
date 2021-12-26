@@ -1,15 +1,17 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import styled from "styled-components";
-import sewMachine from "../images/sy.jpg";
-import carpet from "../images/tepperens.png";
-import suit from "../images/dress.png";
+import { StaticImage } from "gatsby-plugin-image";
 
 const ServiceSection = () => {
   return (
     <ServiceContainer>
       <ServiceWrapper>
         <ServiceCard>
-          <ServiceImage src={sewMachine} alt="sewing machine" />
+          <StaticImage
+            src="../images/sy.jpg"
+            style={ServiceImage}
+            alt="sewing machine"
+          />
           <ServiceInfo>
             <ServiceHeader>Endring og reparasjoner av klær</ServiceHeader>
             <ServiceP>
@@ -18,7 +20,11 @@ const ServiceSection = () => {
           </ServiceInfo>
         </ServiceCard>
         <ServiceCard>
-          <ServiceImage src={suit} alt="suit" />
+          <StaticImage
+            src="../images/dress.png"
+            style={ServiceImage}
+            alt="suit"
+          />
           <ServiceInfo>
             <ServiceHeader>Rens av dress</ServiceHeader>
             <ServiceP>
@@ -28,7 +34,11 @@ const ServiceSection = () => {
           </ServiceInfo>
         </ServiceCard>
         <ServiceCard>
-          <ServiceImage src={carpet} alt="carpet" />
+          <StaticImage
+            src="../images/tepperens.png"
+            style={ServiceImage}
+            alt="carpet"
+          />
           <ServiceInfo>
             <ServiceHeader>Tepperens</ServiceHeader>
             <ServiceP>
@@ -80,12 +90,12 @@ const ServiceCard = styled.div`
   border-color: #161c26;
 `;
 
-const ServiceImage = styled.img`
-  width: 100%;
-  height: 30vh;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
-`;
+const ServiceImage: CSSProperties = {
+  width: "100%",
+  height: "30vh",
+  objectFit: "cover",
+  borderRadius: "10px 10px 0 0",
+};
 
 const ServiceInfo = styled.div`
   border-radius: 5px;
