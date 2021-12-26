@@ -6,6 +6,7 @@ import {
   MdMail,
   BsTelephoneFill,
 } from "react-icons/all";
+import {Link} from "gatsby";
 const Footer = () => {
   return (
     <>
@@ -44,7 +45,7 @@ const Footer = () => {
           </FooterLinkItems>
           <FooterLinkItems>
             <FooterLinkTitle>Snarvei</FooterLinkTitle>
-            <FooterLink>Om oss</FooterLink>
+            <FooterLink to="/omoss">Om oss</FooterLink>
             <FooterLink>FAQ</FooterLink>
             <FooterLink>Kontakt oss</FooterLink>
             <FooterLink>Tjenestevilkår</FooterLink>
@@ -134,7 +135,7 @@ const FooterLinkItems = styled.div`
   }
 `;
 
-const FooterLink = styled.div`
+const FooterLink = styled(Link)`
   text-decoration: none;
   font-size: 13px;
   margin-bottom: 0.5rem;

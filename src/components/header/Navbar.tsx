@@ -30,7 +30,7 @@ const Nav = styled.nav`
   z-index: 100;
   position: relative;
   justify-content: center;
-  padding: 0.5rem calc((100vw - 1300px) / 2);
+  padding: 0 calc((100vw - 1300px) / 2);
 `;
 
 const NavLogo = styled.img`
@@ -58,6 +58,8 @@ const NavLink = styled(Link)`
 
   &:hover {
     color: black;
+    border-bottom: 3px solid #3f92d1;
+    transition: 0.1s ease-in-out;
   }
 
   &:active {
