@@ -8,8 +8,13 @@ import logo from "../../images/logo.png";
 const Navbar = ({ toggle }) => {
   return (
     <Nav>
-      <NavLogo to="/" src={logo} />
-      <Bars onClick={toggle} />
+      <Icon>
+        <NavLogo to="/" src={logo} />
+      </Icon>
+      <Icon>
+        <Bars onClick={toggle} />
+      </Icon>
+
       <NavMenu>
         {menuData.map((item, index) => (
           <NavLink to={item.link} key={index}>
@@ -32,14 +37,27 @@ const Nav = styled.nav`
   justify-content: center;
   padding: 0 calc((100vw - 1300px) / 2);
 `;
+const Icon = styled.div`
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  vertical-align: center;
+  justify-content: center;
+  justify-self: center;
+  align-content: center;
+  align-self: center;
+  margin: auto;
 
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+`;
 const NavLogo = styled.img`
   display: flex;
   justify-self: center;
   cursor: pointer;
   margin: auto;
   height: 4vh;
-  align-items: center;
   z-index: 999;
 
   @media screen and (min-width: 768px) {
@@ -77,17 +95,17 @@ const NavMenu = styled.div`
 `;
 
 const Bars = styled(FaBars)`
-  display: none;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-100%, 100%);
+  font-size: 1.5rem;
+  cursor: pointer;
+  justify-self: center;
+  align-items: center;
 
-  @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 75%);
-    font-size: 1.8rem;
-    cursor: pointer;
-    justify-self: center;
-    align-items: center;
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 `;

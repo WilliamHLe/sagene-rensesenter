@@ -10,7 +10,9 @@ const Omoss = () => {
         <title>Sagene Rensesenter - Rens, vask og skredder på Sagene</title>
         <Layout>
           <Container>
-            <Title>Om oss</Title>
+            <TitleWrapper>
+              <Title>Om oss</Title>
+            </TitleWrapper>
             <ContentWrapper>
               <StaticImage
                 src="../images/fasade.png"
@@ -33,25 +35,27 @@ const Omoss = () => {
 
 export default Omoss;
 
-const Container = styled.div`
-  padding: 1rem 2rem;
+const Container = styled.div``;
+const TitleWrapper = styled.div`
   background-color: #4f98f9;
-
-  @media screen and (min-width: 576px) {
-    padding: 3rem 8rem;
-  }
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
 `;
-
 const Title = styled.h1`
-  margin-bottom: 20px;
+  font-size: 20px;
+  padding-left: 2rem;
 `;
 
 const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 2rem;
 
   @media screen and (min-width: 576px) {
     flex-direction: row;
+    padding: 2rem 6rem;
   }
 `;
 
