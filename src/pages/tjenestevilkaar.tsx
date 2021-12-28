@@ -14,10 +14,9 @@ const Tjenestevilkaar = () => {
           <SectionItem>
             <SectionTitle>1. Definisjon av parter</SectionTitle>
             <SectionText>
-              Selger er Sagene Rensesenter og blir i det følgende benevnt som
-              «Pickup Renseri». Kjøper er den fysisk eller juridisk person som
-              er oppgitt som kjøper i bestillingsbekreftelsen, og blir i det
-              følgende benevnt som «kunde».
+              Selger er Sagene Rensesenter. Kjøper er den fysisk eller juridisk
+              person som er oppgitt som kjøper i bestillingsbekreftelsen, og
+              blir i det følgende benevnt som «kunde».
             </SectionText>
           </SectionItem>
           <SectionItem>
