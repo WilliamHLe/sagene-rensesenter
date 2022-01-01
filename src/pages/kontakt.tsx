@@ -1,29 +1,48 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import Layout from "../components/Layout";
 import styled from "styled-components";
+import { SendMail } from "../components/contactForm/SendMail";
 
 const Kontakt = () => {
+  const form = useRef();
+  const [message, setMessage] = useState("");
+  const [display, setDisplay] = useState("none");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      await SendMail(form.current);
+      setMessage(
+        "Takk for at du tar kontakt med oss, du vil høre fra oss igjen snart!"
+      );
+      setDisplay("block");
+    } catch (error) {
+      setMessage("Meldingen ble ikke sendt, prøv på nytt!");
+    }
+  };
+
   return (
     <Layout>
       <PageTitle>Kontakt oss</PageTitle>
       <Container>
-        <Alert></Alert>
         <Wrapper>
-          <Form>
+          <Alert display={display}>{message}</Alert>
+          <Form ref={form} onSubmit={handleSubmit}>
             <FormWrapper>
               <Label>Navn: *</Label>
-              <Input />
+              <Input type="text" name="from_name" />
             </FormWrapper>
             <FormWrapper>
               <Label>E-post: *</Label>
-              <Input />
+              <Input type="email" name="from_email" />
             </FormWrapper>
             <FormWrapper>
               <Label>Melding: *</Label>
-              <Field />
+              <Field name="message" />
             </FormWrapper>
             <FormWrapper>
-              <FormButton>Send melding</FormButton>
+              <FormButton type="submit" value="Submit" />
             </FormWrapper>
           </Form>
         </Wrapper>
@@ -69,7 +88,20 @@ const PageTitle = styled.h1`
   padding-left: 2rem;
 `;
 
-const Alert = styled.div``;
+const Alert = styled.div`
+  display: ${(props) => props.display};
+  text-align: center;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  background-color: #d4edda;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 576px) {
+    margin: 20px 20vw;
+  }
+`;
 
 const Container = styled.div`
   margin: 50px 0;
@@ -103,7 +135,7 @@ const Field = styled.textarea`
   min-height: 6rem;
   padding: 0.5rem 0 0 0.5rem;
 `;
-const FormButton = styled.button`
+const FormButton = styled.input`
   width: 100%;
   padding: 0.8rem;
   background: rgb(7, 173, 7);
