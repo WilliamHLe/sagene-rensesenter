@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Kontakt oss gjennom telefon eller epost. FAQ - Mest stilte spørsmål.">
+    <meta name="keywords" content="Vaskeri, Renseri, Skredderi, Vask, Rens, Skredder, Systue">
+
+    <link rel="stylesheet" href="sr.css" media="screen" charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="bilder/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="bilder/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="bilder/favicon-16x16.png">
+    <link rel="manifest" href="bilder/site.webmanifest">
+
+    <title>Sagene Rensesenter – Kontakt oss</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98711659-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-98711659-7');
+    </script>
+
+
+  </head>
+  <body style="background-color: rgba(0, 106, 247, 0.69); font-family: 'Roboto', sans-serif;">
+    <header>
+      <div class="container-fluid d-none d-md-block">
+        <div class="row justify-content-around tbar py-sm-2">
+          <div class="col-4 col-sm-4 text-center">
+            <li class="list-inline-item"><i class="far fa-clock mr-1"></i>09-17 (10-14)</li>
+          </div>
+          <div class="col-4 col-sm-4 text-center cfav">
+            <li class="list-inline-item"><i class="fas fa-phone mr-1"></i><a href="tel:96692273">96 69 22 73</a></li>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid d-none d-md-block">
+        <div class="row">
+          <div class="col text-center p-4">
+            <a href="/"><img src="bilder/logo.png" class="logo" alt="logo"></a>
+          </div>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-light navbar-expand-lg bg-light py-0" id="mainNav">
+          <div class="container"><a class="navbar-brand text-uppercase d-lg-none text-expanded" href="#"><img src="bilder/logo.png" class="nav-logo" alt="Sagene Rensesenter logo"></a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div
+                  class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="nav navbar-nav mx-auto">
+                      <li role="presentation" class="nav-item"><a class="nav-link text-uppercase text-expanded" href="/">Hjem <span class="sr-only">(current)</span></a></li>
+                      <li role="presentation" class="nav-item dropdown"><a class="nav-link text-uppercase text-expanded dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">Service</a>
+                      <div class="dropdown-menu mt-1" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/vaskeri">Vaskeri</a>
+                        <a class="dropdown-item" href="/renseri">Renseri</a>
+                        <a class="dropdown-item" href="/skredderi">Skredderi</a>
+                      </div></li>
+                      <li role="presentation" class="nav-item"><a class="nav-link text-uppercase text-expanded" href="/omoss">Om oss</a></li>
+                      <li role="presentation" class="nav-item"><a class="nav-link text-uppercase text-expanded active" href="/kontakt">Kontakt oss</a></li>
+                  </ul>
+          </div>
+          </div>
+      </nav>
+
+    </header>
+
+
+    <nav aria-label="breadcrumb" id="app-navbar">
+      <ol class="breadcrumb rounded-0 m-0 p-4" style=" background: linear-gradient(120deg, rgb(28,35,48), rgba(0,106,247,0.69)); width: 100%; ">
+        <li class="breadcrumb-item"><a style="color: white;" href="/">Hjem</a></li>
+        <li class="breadcrumb-item active" style="color: white;">></li>
+        <li class="breadcrumb-item active" style="color: white;" aria-current="page">Kontakt oss</li>
+      </ol>
+    </nav>
+
+    <div class="container-fluid p-5" style="background-color: white; height: 1100px;">
+
+      <div class="container">
+        <h1>Kontakt oss</h1>
+        <div>
+          <?php echo $okMessage; ?>
+        </div>
+
+        <form id="contact-form" method="post" action="contact.php" role="form">
+
+          <div class="messages"></div>
+
+          <div class="controls">
+              <div class="row">
+                  <div class="col-lg-6">
+                      <div class="form-group">
+                          <label for="form_name">Navn *</label>
+                          <input id="form_name" type="text" name="name" class="form-control" placeholder="Navn" required="required"
+                              data-error="Skriv inn navn.">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="form_email">Epost *</label>
+                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Epost" required="required"
+                            data-error="Skriv inn et gyldig epost.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="form_message">Melding *</label>
+                  <textarea id="form_message" name="message" class="form-control" placeholder="Melding til oss" rows="4" required="required"></textarea>
+                  <div class="help-block with-errors"></div>
+              </div>
+
+              <div class="form-group">
+                  <div class="g-recaptcha" data-sitekey="6LeDjo4UAAAAAJgkIYFYu5XYYv_-q-PDOZ60eStw" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                  <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                  <div class="help-block with-errors"></div>
+              </div>
+
+
+              <input type="submit" class="btn btn-primary btn-send" value="Send melding">
+
+              <p class="text-muted">
+                <strong>*</strong> Må være oppfylt.
+              </p>
+
+          </div>
+
+        </form>
+
+        <div class="faq pt-5">
+          <h2>Ofte stilte spørsmål</h2>
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Det er fortsatt flekker på tøyet
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  Vi sier i fra eller henger alltid på lapp med beskjed om at flekken ikke går av. Vi kan ikke trylle, og noen ganger kan vi ikke jobbe mer med flekkfjerning i frykt for å ødelegge stoffet.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Renser dere på dagen?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  Ja, vi kan gjøre dette, men vi fraråder det som oftest. Dette skyldes at vi ønsker tid for best mulig resultat. Du betaler ekspresspriser da.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Reparer dere sko og nøkler?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Nei, ikke midlertidig.
+                  </div>
+                </div>
+              </div>
+          </div>
+          </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+    <footer class="page-footer font-small unique-color-dark" style="background-color: #1c2330;" >
+
+      <!-- <div style="background-color: #6351ce; color: white;">
+        <div class="container">
+
+          <div class="row py-4 d-flex align-items-center">
+
+            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+              <h6 class="mb-0">Finn oss på sosiale medier</h6>
+            </div>
+
+            <div class="col-md-6 col-lg-7 text-center text-md-right">
+              <a class="fb-ic">
+                <i class="fab fa-facebook-f white-text mr-4"> </i>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div> -->
+      <div class="container text-center text-md-left pt-5">
+        <div class="row mt-3 l-col" style="color:white;">
+
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">Sagene Rensesenter</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+
+              <div class="fb-page" data-href="https://www.facebook.com/sagenerensesenter/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/sagenerensesenter/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/sagenerensesenter/">Sagene Rensesenter</a></blockquote></div>
+
+
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">Tjenester</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <a href="/vaskeri">Vaskeri</a>
+            </p>
+            <p>
+              <a href="/renseri">Renseri</a>
+            </p>
+            <p>
+              <a href="/skredderi">Skredderi</a>
+            </p>
+            <p>
+              <a href="/renseri">Tepperens</a>
+            </p>
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">Snarvei</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <a href="/omoss">Om oss</a>
+            </p>
+            <p>
+              <a href="/kontakt">FAQ</a>
+            </p>
+            <p>
+              <a href="/kontakt">Kontakt oss</a>
+            </p>
+            <p>
+              <a href="/kontakt">Hjelp</a>
+            </p>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase font-weight-bold">Kontakt</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <i class="fas fa-map-marker-alt mr-3"></i>Maridalsveien 174, 0469 Oslo</p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i><a href="mailto:post@sagenerensesenter.no">post@sagenerensesenter.no</a></p>
+            <p>
+              <i class="fas fa-phone mr-3"></i><a href="tel:96692273">96 69 22 73</a></p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-copyright text-center py-3" style="background-color: #161c26; color:#a2a4a8;">© 2019 Sagene Rensesenter ||
+        <a href="mailto:le.william.h@outlook.com"> Utviklet av William H. Le</a>
+      </div>
+
+    </footer>
+
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="validator.js"></script>
+    <script src="contact.js"></script>
+  </body>
+</html>

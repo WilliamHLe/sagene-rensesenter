@@ -1,0 +1,243 @@
+/* top navbar */
+.tbar {
+  background-color: #1c2330;
+  color: #7e8992;
+  font-size: 0.8em;
+  font-family: Arial;
+}
+a:link {
+  color: #7e8992;
+}
+li a:hover{
+  color: white;
+  text-decoration: underline;
+}
+div > li:hover{
+  color: white;
+}
+i:hover + a{
+  color: white;
+  text-decoration: underline;
+}
+.cfav a {
+  color: #7e8992;
+}
+.cfav a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+
+/* mobile navbar */
+.navbar {
+ min-height: 80px;
+}
+.navbar-brand {
+ padding: 0 15px;
+ height: 80px;
+ line-height: 80px;
+}
+
+
+
+@media (min-width:992px) {
+  #mainNav .navbar-nav .nav-item {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
+}
+
+/* navbar blue underline */
+.navbar-nav > li {
+  float: left;
+  position: relative;
+  border-bottom: 5px solid #f8f9fa;
+}
+.navbar-nav > li:hover  {
+  position: relative;
+  border-bottom: 5px solid #3f92d1;
+  text-decoration: none;
+  transition: .3s ease-in-out;
+}
+.nav-link {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+
+/* navbar main brand */
+.logo {
+  height: auto;
+  width: 500px;
+}
+@media (max-width: 991px) {
+  .logo {
+    height: auto;
+    width: 400px;
+  }
+}
+.nav-logo {
+  margin-top: 20px;
+  height: auto;
+  width: 250px;
+}
+
+
+/* carousel */
+div.jumbotron.carousel-hero {
+  color: #fff;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 0;
+}
+
+div.jumbotron.hero-nature {
+  background-image: url('bilder/genser.jpg');
+}
+
+div.jumbotron.hero-photography {
+  background-image: url('bilder/sr1.jpg');
+  filter: grayscale(30%);
+  filter: brightness(50%);
+}
+
+div.jumbotron.hero-technology {
+  background-image: url('bilder/vaskeM.jpg');
+}
+
+h1.hero-title, h2.hero-title, h3.hero-title {
+  text-shadow: 0 3px 3px rgba(0,0,0,0.4);
+}
+
+p.hero-subtitle {
+  max-width: 600px;
+  margin: 0px auto;
+  padding: 0px 15px;
+  color: #fff;
+}
+
+.plat {
+  border-radius: 0px;
+}
+
+/* Forandrer på fargen til knapp */
+/* .btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 0 #048f83!important;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #016090;
+  border-color: #016090;
+}
+
+.btn.btn-primary {
+  background-color: #005eff!important;
+  border-color: #005eff!important;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 .2rem rgba(0,123,255,.5);
+} */
+
+* {
+  /*box-sizing: inherit;*/
+}
+
+*:before, *:after {
+  /*box-sizing: inherit;*/
+}
+
+span {
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+.carousel-control-prev {
+}
+
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+  margin: 0;
+}
+
+
+.bimg{
+  background-color: white;
+  background-size: 100%;
+
+}
+
+.nav-item {
+  font-size: 0.95em;
+}
+
+
+body {
+  background-color: black;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-img-top {
+    width: 100%;
+    height: 40vw;
+    object-fit: cover;
+  }
+}
+
+.btn-breadcrumb .btn.btn-primary:not(:last-child):after {
+    border-left: 10px solid #327CBA;
+}
+.btn-breadcrumb .btn.btn-primary:hover:not(:last-child):after {
+    border-left: 10px solid #286090;
+}
+.breadcrumb-item a span.sep {
+    color: #ff0000;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    font-family: 'fontAwesome';
+    content: "" !important;
+    color: white;
+}
+.breadcrumb >.active a {
+   color: white;
+}
+.breadcrumb >.active {
+   color: white;
+}
+.breadcrumb >.active a{
+   color: white;
+   text-decoration: none;
+}
+.breadcrumb li a    {
+    color: white;
+}
+ol > li > a {color:white}
+.l-col a {
+  color: white;
+}
+
+.l-col a:hover {
+  color: white;
+}
+.jumbotron {
+  height: 600px;
+}
