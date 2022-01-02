@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import Layout from "../components/Layout";
 import styled from "styled-components";
 import { SendMail } from "../components/contactForm/SendMail";
+import SEO from "../components/seo";
 
 const Kontakt = () => {
   const form = useRef();
@@ -24,6 +25,7 @@ const Kontakt = () => {
 
   return (
     <Layout>
+      <SEO title="Kontakt oss - Sagene Rensesenter" />
       <PageTitle>Kontakt oss</PageTitle>
       <Container>
         <Wrapper>

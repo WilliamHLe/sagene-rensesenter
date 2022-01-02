@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import Layout from "../components/Layout";
+import SEO from "../components/seo";
 
 const Tjenestevilkaar = () => {
   return (
     <Layout>
+      <SEO title="Tjenestevilkår og betingelser - Sagene Rensesenter" />
       <Container>
         <TitleWrapper>
           <Title>Tjenestevilkår og betingelser</Title>

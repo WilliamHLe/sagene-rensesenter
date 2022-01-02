@@ -2,10 +2,12 @@ import React, { CSSProperties } from "react";
 import Layout from "../components/Layout";
 import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
+import SEO from "../components/seo";
 
 const Tjenester = () => {
   return (
     <Layout>
+      <SEO title="Våre tjenester - Sagene Rensesenter" />
       <Container>
         <Title>Våre tjenester</Title>
         <Wrapper>
