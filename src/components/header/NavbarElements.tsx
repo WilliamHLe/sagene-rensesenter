@@ -52,10 +52,6 @@ export const NavLink = styled(Link)`
     border-bottom: 4px solid #3f92d1;
     transition: 0.1s ease-in-out;
   }
-
-  &:active {
-    border-bottom: 3px solid #3f92d1;
-  }
 `;
 
 export const NavMenu = styled.div`

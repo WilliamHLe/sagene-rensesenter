@@ -25,7 +25,7 @@ const Navbar = ({ toggle }) => {
 
       <NavMenu>
         {menuData.map((item, index) => (
-          <NavLink to={item.link} key={index}>
+          <NavLink to={item.link} activeStyle={{ color: "black" }} key={index}>
             {item.title}
           </NavLink>
         ))}

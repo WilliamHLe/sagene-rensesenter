@@ -5,21 +5,32 @@ import {
   CloseIcon,
   SidebarLink,
   SidebarMenu,
+  NavLogo,
+  Wrapper,
 } from "./SidebarElements";
 import { menuData } from "../../data/MenuData";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
-      <Icon onClick={toggle}>
-        <CloseIcon />
-      </Icon>
+      <Wrapper>
+        <StaticImage src="../../images/logo.png" alt="logo" style={NavLogo} />
+      </Wrapper>
       <SidebarMenu>
         {menuData.map((item, index) => (
-          <SidebarLink to={item.link} key={index} onClick={toggle}>
+          <SidebarLink
+            to={item.link}
+            key={index}
+            activeStyle={{ color: "#3f92d1" }}
+            onClick={toggle}
+          >
             {item.title}
           </SidebarLink>
         ))}
+        <Icon>
+          <CloseIcon onClick={toggle} />
+        </Icon>
       </SidebarMenu>
     </SidebarContainer>
   );
