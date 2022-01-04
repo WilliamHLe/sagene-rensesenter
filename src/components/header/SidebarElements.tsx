@@ -16,7 +16,9 @@ export const SidebarContainer = styled.aside`
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 `;
-
+export const ImageItem = styled.div`
+  width: 70vw;
+`;
 export const Wrapper = styled.div`
   display: flex;
   position: absolute;
@@ -30,7 +32,8 @@ export const NavLogo: CSSProperties = {
   display: "flex",
   justifySelf: "center",
   cursor: "pointer",
-  height: "4vh",
+  height: "auto",
+  width: "100%",
   zIndex: "999",
 };
 

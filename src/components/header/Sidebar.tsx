@@ -7,6 +7,7 @@ import {
   SidebarMenu,
   NavLogo,
   Wrapper,
+  ImageItem,
 } from "./SidebarElements";
 import { menuData } from "../../data/MenuData";
 import { StaticImage } from "gatsby-plugin-image";
@@ -15,7 +16,9 @@ const Sidebar = ({ isOpen, toggle }) => {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Wrapper>
-        <StaticImage src="../../images/logo.png" alt="logo" style={NavLogo} />
+        <ImageItem>
+          <StaticImage src="../../images/logo.png" alt="logo" style={NavLogo} />
+        </ImageItem>
       </Wrapper>
       <SidebarMenu>
         {menuData.map((item, index) => (
