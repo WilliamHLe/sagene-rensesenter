@@ -38,16 +38,16 @@ const Footer = () => {
         <FooterLinksWrapper>
           <FooterLinkItems>
             <FooterLinkTitle>Tjenester</FooterLinkTitle>
-            <FooterLink>Rens</FooterLink>
-            <FooterLink>Vask</FooterLink>
-            <FooterLink>Skredder</FooterLink>
-            <FooterLink>Tepperens</FooterLink>
+            <FooterLink to="/tjenester">Rens</FooterLink>
+            <FooterLink to="/tjenester">Vask</FooterLink>
+            <FooterLink to="/tjenester">Skredder</FooterLink>
+            <FooterLink to="/tjenester">Tepperens</FooterLink>
           </FooterLinkItems>
           <FooterLinkItems>
             <FooterLinkTitle>Snarvei</FooterLinkTitle>
             <FooterLink to="/omoss">Om oss</FooterLink>
-            <FooterLink>FAQ</FooterLink>
-            <FooterLink>Kontakt oss</FooterLink>
+            <FooterLink to="/kontakt">FAQ</FooterLink>
+            <FooterLink to="/kontakt">Kontakt oss</FooterLink>
             <FooterLink to="/tjenestevilkaar">Tjenestevilkår</FooterLink>
           </FooterLinkItems>
         </FooterLinksWrapper>

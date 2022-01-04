@@ -1,54 +1,23 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import Layout from "../components/Layout";
 import styled from "styled-components";
-import { SendMail } from "../components/contactForm/SendMail";
 import SEO from "../components/seo";
+import ContactForm from "../components/contactForm/ContactForm";
+import { Link } from "gatsby";
 
 const Kontakt = () => {
-  const form = useRef();
-  const [message, setMessage] = useState("");
-  const [display, setDisplay] = useState("none");
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    try {
-      await SendMail(form.current);
-      setMessage(
-        "Takk for at du tar kontakt med oss, du vil høre fra oss igjen snart!"
-      );
-      setDisplay("block");
-    } catch (error) {
-      setMessage("Meldingen ble ikke sendt, prøv på nytt!");
-    }
-  };
-
   return (
     <Layout>
       <SEO title="Kontakt oss - Sagene Rensesenter" />
       <PageTitle>Kontakt oss</PageTitle>
-      <Container>
-        <Wrapper>
-          <Alert display={display}>{message}</Alert>
-          <Form ref={form} onSubmit={handleSubmit}>
-            <FormWrapper>
-              <Label>Navn: *</Label>
-              <Input type="text" name="from_name" />
-            </FormWrapper>
-            <FormWrapper>
-              <Label>E-post: *</Label>
-              <Input type="email" name="from_email" />
-            </FormWrapper>
-            <FormWrapper>
-              <Label>Melding: *</Label>
-              <Field name="message" />
-            </FormWrapper>
-            <FormWrapper>
-              <FormButton type="submit" value="Submit" />
-            </FormWrapper>
-          </Form>
-        </Wrapper>
-      </Container>
+      <ContactSection>
+        <SectionTitle>Send oss en melding</SectionTitle>
+        <SectionText>
+          Fyll ut skjemaet under så vil vi svare deg innen 1-2 virkedager
+        </SectionText>
+
+        <ContactForm />
+      </ContactSection>
       <FAQSection>
         <SectionTitle>Ofte stilte spørsmål</SectionTitle>
         <Accordion>
@@ -72,6 +41,13 @@ const Kontakt = () => {
             <AccordionButton>Reparerer dere sko og nøkler?</AccordionButton>
             <AccordionBody>Nei, ikke midlertidig.</AccordionBody>
           </AccordionItem>
+          <AccordionItem>
+            <AccordionButton>Reklamasjon</AccordionButton>
+            <AccordionBody>
+              Les vår <Link to="/tjenestevilkaar">tjenestevilkår</Link> før du
+              reklamerer.
+            </AccordionBody>
+          </AccordionItem>
         </Accordion>
       </FAQSection>
     </Layout>
@@ -90,63 +66,13 @@ const PageTitle = styled.h1`
   padding-left: 2rem;
 `;
 
-const Alert = styled.div`
-  display: ${(props) => props.display};
+const ContactSection = styled.div`
+  margin: 2rem;
+`;
+const SectionText = styled.p`
   text-align: center;
-  color: #155724;
-  border: 1px solid #c3e6cb;
-  background-color: #d4edda;
-  border-radius: 4px;
-  padding: 1rem;
-  margin-bottom: 10px;
-
-  @media screen and (min-width: 576px) {
-    margin: 20px 20vw;
-  }
+  margin-bottom: 1rem;
 `;
-
-const Container = styled.div`
-  margin: 50px 0;
-`;
-
-const Wrapper = styled.div``;
-
-const Form = styled.form`
-  @media screen and (min-width: 576px) {
-    margin: 20px 20vw;
-  }
-`;
-
-const FormWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin: 0 2.5rem 1.2rem 2rem;
-`;
-
-const Label = styled.label``;
-
-const Input = styled.input`
-  display: block;
-  width: 100%;
-  height: 2rem;
-  padding: 0.3rem 0.4rem;
-  margin-top: 0.4rem;
-`;
-const Field = styled.textarea`
-  width: 100%;
-  min-height: 6rem;
-  padding: 0.5rem 0 0 0.5rem;
-`;
-const FormButton = styled.input`
-  width: 100%;
-  padding: 0.8rem;
-  background: rgb(7, 173, 7);
-  color: white;
-  border-radius: 0.2rem;
-  cursor: pointer;
-  border: none;
-`;
-
 const FAQSection = styled.div`
   margin: 4rem 3rem;
 `;
