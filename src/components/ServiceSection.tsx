@@ -56,7 +56,7 @@ export default ServiceSection;
 
 const ServiceContainer = styled.div`
   background-color: #4f98f9;
-  min-height: 80vh;
+  min-height: 70vh;
   padding: 3rem calc((100vw - 1300px) / 2);
   align-items: center;
   justify-content: center;
@@ -66,15 +66,15 @@ const ServiceContainer = styled.div`
 
 const ServiceWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 0 2rem;
-  justify-items: center;
-  grid-gap: 10px;
+  grid-template-columns: 1fr;
+  row-gap: 1.5rem;
+  padding: 0 calc((100vw - 1300px) / 2);
 
-  @media screen and (max-width: 768px) {
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-    padding: 0 calc((100vw - 1300px) / 2);
+  @media screen and (min-width: 576px) {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 2rem;
+    justify-items: center;
+    column-gap: 2.5rem;
   }
 `;
 

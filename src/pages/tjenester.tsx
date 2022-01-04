@@ -100,57 +100,57 @@ const Tjenester = () => {
                 resultat. Prisen avhenger kun av størrelsen.
               </p>
             </WrapperText>
-
-            <ServicesList>
-              <ServiceTitle>Våre renseritjenester</ServiceTitle>
-              <ListRow>
-                <ListWrapper>
-                  <h4>Dresser</h4>
-                  <ListUl>
-                    <li>Dress/drakt</li>
-                    <li>Bukse/skjørt</li>
-                    <li>Blazer/dressjakke</li>
-                    <li>Vest</li>
-                    <li>Smoking</li>
-                    <li>Slips</li>
-                  </ListUl>
-                </ListWrapper>
-                <ListWrapper>
-                  <h4>Kjoler</h4>
-                  <ListUl>
-                    <li>Kjole</li>
-                    <li>Skjørt</li>
-                    <li>Selskapskjole</li>
-                    <li>Brudekjole</li>
-                    <li>Dåpskjole</li>
-                    <li>Bunad</li>
-                  </ListUl>
-                </ListWrapper>
-                <ListWrapper>
-                  <h4>Uteklær</h4>
-                  <ListUl>
-                    <li>Vinterjakker</li>
-                    <li>Frakk</li>
-                    <li>Kåpe</li>
-                    <li>Kappe</li>
-                    <li>Dunjakke</li>
-                  </ListUl>
-                </ListWrapper>
-                <ListWrapper>
-                  <h4>Diverse</h4>
-                  <ListUl>
-                    <li>Teppe</li>
-                    <li>Sengetøy</li>
-                    <li>Gardiner</li>
-                    <li>Håndklær</li>
-                    <li>Dørmatte</li>
-                    <li>Pelskåpe</li>
-                  </ListUl>
-                </ListWrapper>
-              </ListRow>
-            </ServicesList>
           </ContentWrapper>
+          <ServicesList>
+            <ServiceTitle>Våre renseritjenester</ServiceTitle>
+            <ListRow>
+              <ListWrapper>
+                <h4>Dresser</h4>
+                <ListUl>
+                  <li>Dress/drakt</li>
+                  <li>Bukse/skjørt</li>
+                  <li>Blazer/dressjakke</li>
+                  <li>Vest</li>
+                  <li>Smoking</li>
+                  <li>Slips</li>
+                </ListUl>
+              </ListWrapper>
+              <ListWrapper>
+                <h4>Kjoler</h4>
+                <ListUl>
+                  <li>Kjole</li>
+                  <li>Skjørt</li>
+                  <li>Selskapskjole</li>
+                  <li>Brudekjole</li>
+                  <li>Dåpskjole</li>
+                  <li>Bunad</li>
+                </ListUl>
+              </ListWrapper>
+              <ListWrapper>
+                <h4>Uteklær</h4>
+                <ListUl>
+                  <li>Vinterjakker</li>
+                  <li>Frakk</li>
+                  <li>Kåpe</li>
+                  <li>Kappe</li>
+                  <li>Dunjakke</li>
+                </ListUl>
+              </ListWrapper>
+              <ListWrapper>
+                <h4>Diverse</h4>
+                <ListUl>
+                  <li>Teppe</li>
+                  <li>Sengetøy</li>
+                  <li>Gardiner</li>
+                  <li>Håndklær</li>
+                  <li>Dørmatte</li>
+                  <li>Pelskåpe</li>
+                </ListUl>
+              </ListWrapper>
+            </ListRow>
+          </ServicesList>
         </SectionWrapper>
+
         <SectionWrapper>
           <SectionTitle>Skredder</SectionTitle>
           <ContentWrapper>
@@ -225,17 +225,27 @@ const Container = styled.div`
 
 const SectionWrapper = styled.div`
   margin-bottom: 2rem;
+
+  @media screen and (min-width: 576px) {
+    margin-bottom: 4rem;
+  }
 `;
 const SectionTitle = styled.h2`
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
+
+  @media screen and (min-width: 576px) {
+    margin-bottom: 2rem;
+  }
 `;
 const ContentWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
+  column-gap: 2rem;
 
   @media screen and (min-width: 576px) {
     grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
   }
 `;
 const ImageStyles: CSSProperties = {
@@ -244,13 +254,8 @@ const ImageStyles: CSSProperties = {
 };
 
 const ImageWrapper = styled.div`
-  width: 100%;
-  display: flex;
-
-  justify-self: center;
-  @media screen and (min-width: 576px) {
-    width: 80%;
-  }
+  min-width: 30vw;
+  height: auto;
 `;
 const WrapperText = styled.div`
   margin-bottom: 20px;
@@ -269,18 +274,18 @@ const ListWrapper = styled.div`
   margin-bottom: 1rem;
 
   @media screen and (min-width: 576px) {
-    margin-right: 5rem;
   }
 `;
 const ListUl = styled.ul`
   list-style-position: inside;
+  width: auto;
 `;
 
 const ListRow = styled.div`
   display: flex;
   flex-direction: column;
-
   @media screen and (min-width: 576px) {
     flex-direction: row;
+    justify-content: space-around;
   }
 `;
