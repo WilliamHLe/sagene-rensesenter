@@ -29,12 +29,17 @@ export const LogoLink = styled(Link)`
     display: none;
   }
 `;
+
+export const ImageItem = styled.div`
+  width: 70vw;
+`;
 export const NavLogo: CSSProperties = {
   display: "flex",
   justifySelf: "center",
   cursor: "pointer",
   margin: "auto",
-  height: "4vh",
+  height: "auto",
+  width: "100%",
   zIndex: "999",
 };
 

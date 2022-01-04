@@ -9,6 +9,7 @@ import {
   NavLink,
   NavLogo,
   NavMenu,
+  ImageItem,
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
@@ -16,7 +17,13 @@ const Navbar = ({ toggle }) => {
     <Nav>
       <NavIcon>
         <LogoLink to="/">
-          <StaticImage src="../../images/logo.png" alt="logo" style={NavLogo} />
+          <ImageItem>
+            <StaticImage
+              src="../../images/logo.png"
+              alt="logo"
+              style={NavLogo}
+            />
+          </ImageItem>
         </LogoLink>
       </NavIcon>
       <NavIcon>
