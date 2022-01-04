@@ -4,11 +4,15 @@ import Hero from "../components/Hero";
 import Maps from "../components/Maps";
 import ServiceSection from "../components/ServiceSection";
 import PriceSection from "../components/PriceSection";
+import SEO from "../components/seo";
 
 const IndexPage = function () {
   return (
     <main>
-      <title>Sagene Rensesenter - Rens, vask og skredder på Sagene</title>
+      <SEO
+        title="Renseri, vaskeri, skredder på Sagene - Sagene Rensesenter"
+        description="Sagene Rensesenter tilbyr tjenester innen vaskeri, renseri og skredderi."
+      />
       <Layout>
         <Hero />
         <ServiceSection />

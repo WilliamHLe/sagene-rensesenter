@@ -49,7 +49,7 @@ const PriceSection = () => {
 export default PriceSection;
 
 const PriceContainer = styled.div`
-  min-height: 80vh;
+  min-height: 70vh;
   background-color: #ffffff;
   padding: 3rem calc((100vw - 1300px) / 2);
   align-items: center;

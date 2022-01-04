@@ -1,4 +1,4 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
 import { Link } from "gatsby";
@@ -10,7 +10,6 @@ export const SidebarContainer = styled.aside`
   height: 100%;
   background: #1c2330;
   display: grid;
-  align-items: center;
   left: 0;
   transition: 0.3s ease-in-out;
   overflow-x: hidden;
@@ -18,19 +17,40 @@ export const SidebarContainer = styled.aside`
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 `;
 
+export const Wrapper = styled.div`
+  display: flex;
+  position: absolute;
+  width: 100%;
+  margin: 1.5rem 0;
+  top: 0;
+  justify-content: center;
+`;
+
+export const NavLogo: CSSProperties = {
+  display: "flex",
+  justifySelf: "center",
+  cursor: "pointer",
+  height: "4vh",
+  zIndex: "999",
+};
+
 export const CloseIcon = styled(FaTimes)`
   color: #ffffff;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
+
+  padding: 3px;
+  border: 2px solid white;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+
+  background: transparent;
+  cursor: pointer;
+  outline: none;
 `;
 
 export const Icon = styled.div`
-  position: absolute;
-  top: 1.2rem;
-  right: 1.5rem;
-  background: transparent;
-  font-size: 2rem;
-  cursor: pointer;
-  outline: none;
+  align-self: center;
 `;
 
 export const SidebarLink = styled(Link)`
@@ -52,6 +72,7 @@ export const SidebarLink = styled(Link)`
 export const SidebarMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 80px);
+  grid-template-rows: repeat(4, 80px) 160px;
   text-align: center;
+  margin-top: 8rem;
 `;
