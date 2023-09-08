@@ -8,16 +8,16 @@ import { Link } from "gatsby";
 const Kontakt = () => {
   return (
     <Layout>
-      <SEO title="Kontakt oss - Sagene Rensesenter" />
-      <PageTitle>Kontakt oss</PageTitle>
-      <ContactSection>
+      <SEO title="FAQ - Sagene Rensesenter" />
+      <PageTitle>FAQ</PageTitle>
+      {/*<ContactSection>
         <SectionTitle>Send oss en melding</SectionTitle>
         <SectionText>
           Fyll ut skjemaet under så vil vi svare deg innen 1-2 virkedager
         </SectionText>
 
         <ContactForm />
-      </ContactSection>
+      </ContactSection>*/}
       <FAQSection>
         <SectionTitle>Ofte stilte spørsmål</SectionTitle>
         <Accordion>

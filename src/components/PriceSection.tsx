@@ -14,7 +14,7 @@ const PriceSection = () => {
             alt="sewing machine"
           />
           <PriceInfo>
-            <PriceHeader>450,-</PriceHeader>
+            <PriceHeader>470,-</PriceHeader>
             <PriceP>Dressrens</PriceP>
           </PriceInfo>
         </PriceCard>
@@ -25,7 +25,7 @@ const PriceSection = () => {
             alt="suit"
           />
           <PriceInfo>
-            <PriceHeader>Fra 100,- per kg</PriceHeader>
+            <PriceHeader>Fra 130,- per kg</PriceHeader>
             <PriceP>Vask av klær</PriceP>
           </PriceInfo>
         </PriceCard>
@@ -33,15 +33,26 @@ const PriceSection = () => {
           <StaticImage
             src="../images/s-mach.svg"
             style={PriceImage}
-            alt="carpet"
+            alt="washing"
           />
           <PriceInfo>
-            <PriceHeader>Fra 180,-</PriceHeader>
-            <PriceP>Legge opp bukser</PriceP>
+            <PriceHeader>Fra 220,-</PriceHeader>
+            <PriceP>Opplegg av bukser</PriceP>
+          </PriceInfo>
+        </PriceCard>
+        <PriceCard>
+          <StaticImage
+              src="../images/carpet-2.png"
+              style={PriceImage}
+              alt="carpet"
+          />
+          <PriceInfo>
+            <PriceHeader>250,- per m<sup>2</sup></PriceHeader>
+            <PriceP>Tepperens</PriceP>
           </PriceInfo>
         </PriceCard>
       </PriceWrapper>
-      <PriceText>Kom innom eller ring oss for å få et prisoverslag</PriceText>
+      <PriceText>Kom innom eller ring oss for å få et pristilbud</PriceText>
     </PriceContainer>
   );
 };

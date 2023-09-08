@@ -9,13 +9,13 @@ const Topbar = () => {
         <Icon>
           <BsClockFill />
         </Icon>
-        09-17 (10-14)
+        10-17 (10-14)
       </BarItem>
       <BarItem>
         <Icon>
           <BsFillTelephoneFill />
         </Icon>
-        96 69 22 73
+          92 94 25 39
       </BarItem>
     </Bar>
   );

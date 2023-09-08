@@ -32,7 +32,7 @@ const Footer = () => {
             <Icon>
               <BsTelephoneFill />
             </Icon>
-            96 69 22 73
+            92 94 25 39
           </DescItems>
         </FooterDescription>
         <FooterLinksWrapper>
@@ -47,7 +47,6 @@ const Footer = () => {
             <FooterLinkTitle>Snarvei</FooterLinkTitle>
             <FooterLink to="/omoss">Om oss</FooterLink>
             <FooterLink to="/kontakt">FAQ</FooterLink>
-            <FooterLink to="/kontakt">Kontakt oss</FooterLink>
             <FooterLink to="/tjenestevilkaar">Tjenestevilkår</FooterLink>
           </FooterLinkItems>
         </FooterLinksWrapper>
@@ -57,7 +56,7 @@ const Footer = () => {
           <Icon>
             <FaRegCopyright />
           </Icon>
-          2022 Sagene Rensesenter
+          2023 Sagene Rensesenter
         </CopyrightText>
         <Author>Utviklet av William Le</Author>
       </CopyrightContainer>
